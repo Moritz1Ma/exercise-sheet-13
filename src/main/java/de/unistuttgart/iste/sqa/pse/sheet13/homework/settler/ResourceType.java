@@ -6,12 +6,16 @@ package de.unistuttgart.iste.sqa.pse.sheet13.homework.settler;
 public class ResourceType {
 	private final String label;
 
-	public ResourceType(String label) {
+	protected ResourceType(final String label) {
 		super();
 		this.label = label;
+		if (label== null || label.contains (" ") ){
+			throw new IllegalArgumentException("Label must not be empty!");
+		}
+
 	}
 
-	public String getLabel() {
+	public final String getLabel() {
 		return label;
 	}
 }
