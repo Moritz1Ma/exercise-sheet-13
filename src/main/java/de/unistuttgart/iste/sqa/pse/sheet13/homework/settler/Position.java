@@ -10,6 +10,8 @@ public final class Position {
     private final long latitude;
 
     /**
+     * Constructor for Position.
+     *
      * @param longitude
      * @param latitude
      */
@@ -20,16 +22,32 @@ public final class Position {
     }
 
 
+     /*@
+      @ requires Position !== null;
+      @ requires longitude !== null;
+      @ ensures returns the longitude,
+     */
+
     /**
-     * @return
+     * Gets the longitude.
+     *
+     * @return the longitude.
      */
 
     public long getLongitude() {
         return longitude;
     }
 
+     /*@
+      @ requires Position !== null;
+      @ requires latitude !== null;
+      @ ensures returns the latitude,
+     */
+
     /**
-     * @return
+     * Gets the latitude.
+     *
+     * @return latitude.
      */
     public long getLatitude() {
         return latitude;

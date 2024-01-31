@@ -3,7 +3,6 @@ package de.unistuttgart.iste.sqa.pse.sheet13.homework.settler;
 /**
  * Class for  Soldiers who are a subclass of Settlers.
  * <p>
- * Soldiers extend Settlers by the method fightEnemy().
  */
 public final class Soldier extends Settler {
     private Settler enemy;
@@ -24,7 +23,7 @@ public final class Soldier extends Settler {
      */
 
     /**
-     * Makes the soldier settle;( also only here for completeness);
+     * Makes the soldier settle (also only here for completeness);
      */
     @Override
     public void settle() {
@@ -37,23 +36,28 @@ public final class Soldier extends Settler {
      */
 
     /**
-     * Makes the Soldier fight an enemy;
+     * Makes the Soldier fight an enemy.
      *
-     * @param enemy the enemy to be fought;
+     * @param enemy the enemy to be fought.
      */
     public void fightEnemy(final Settler enemy) {
         this.enemy = enemy;
         //TODO /lasst das so, das Todo ist Teil der Aufgabenstellung
     }
     // ich glaube, der Soldier braucht garkeine  Position lol
-   /*@
-     @ requires
-     @ ensures
-    */
+
+
+     /*@
+      @ requires soldier !== null;
+      @ requires  position !== null;
+      @ ensures returns the position;
+     */
 
     /**
-     * @param soldier the soldier wanted;
-     * @return the position of the soldier;
+     * Gets the position of the soldier.
+     *
+     * @param soldier the soldier wanted.
+     * @return the position of the soldier.
      */
     private Position getPosition(final Soldier soldier) {
         return soldier.getPosition();

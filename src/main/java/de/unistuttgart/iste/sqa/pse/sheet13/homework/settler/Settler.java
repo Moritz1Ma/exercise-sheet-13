@@ -12,8 +12,11 @@ public abstract class Settler {
     public abstract void settle();
 
     /**
-     * @param name
-     * @param position
+     * Constructor for Settler.
+     *
+     * @param name     name of the settler.
+     * @param position position of the settler.
+     * @throws IllegalArgumentException if name or position are invalid.
      */
     Settler(final String name, final Position position) {
         if (name == null || name.contains("  ") || position == null || getPosition() == null) {
@@ -21,18 +24,34 @@ public abstract class Settler {
         }
     }
 
+    /*@
+      @ requires Settler !== null;
+      @ requires name !== null;
+      @ ensures returns the name;
+     */
+
     /**
-     * @return the name
+     * Gets the name of the Settler.
+     *
+     * @return the name of the Settler.
      */
     public String getName() {
-        if (name == null) {
+        if (name == null || name.contains(" ")) {
             throw new IllegalStateException("The name cannot be null");
         }
         return name;
     }
 
+     /*@
+      @ requires Settler !== null;
+      @ requires position !== null;
+      @ ensures returns the position,
+     */
+
     /**
-     * @return
+     * Gets the position of the Settler.
+     *
+     * @return the position.
      */
     public Position getPosition() {
         return position;
