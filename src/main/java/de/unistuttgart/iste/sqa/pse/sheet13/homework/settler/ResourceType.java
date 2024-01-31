@@ -3,7 +3,7 @@ package de.unistuttgart.iste.sqa.pse.sheet13.homework.settler;
 /**
  * Type of a Resource;
  */
-public abstract class ResourceType {
+public class ResourceType {
     private final String label;
 
     /**
