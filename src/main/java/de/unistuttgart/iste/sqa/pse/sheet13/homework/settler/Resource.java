@@ -10,8 +10,9 @@ package de.unistuttgart.iste.sqa.pse.sheet13.homework.settler;
 /**
  *
  */
-public abstract class Resource extends ResourceType {
+public abstract class Resource {
     private String name;
+    private String label;
     private Position position;
 
     /**
@@ -20,7 +21,7 @@ public abstract class Resource extends ResourceType {
      * @param label the label of the Resource.
      */
     protected Resource(final String label) {
-        super(label);
+        this.label = label;
     }
 
      /*@

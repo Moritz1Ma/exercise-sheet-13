@@ -42,18 +42,7 @@ public abstract class Settler {
         return name;
     }
 
-     /*@
-      @ requires Settler !== null;
-      @ requires position !== null;
-      @ ensures returns the position,
-     */
-
-    /**
-     * Gets the position of the Settler.
-     *
-     * @return the position.
-     */
-    public Position getPosition() {
+    public Position getPosition(){
         return position;
-    }
+    } ;
 }

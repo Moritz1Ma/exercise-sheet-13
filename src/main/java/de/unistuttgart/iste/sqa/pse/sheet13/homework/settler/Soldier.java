@@ -17,6 +17,7 @@ public final class Soldier extends Settler {
         super(name, position);
     }
 
+
     /*@
       @ requires (only here for completeness)
       @ ensures (only here for completeness)
@@ -44,8 +45,6 @@ public final class Soldier extends Settler {
         this.enemy = enemy;
         //TODO /lasst das so, das Todo ist Teil der Aufgabenstellung
     }
-    // ich glaube, der Soldier braucht garkeine  Position lol
-
 
      /*@
       @ requires soldier !== null;
@@ -59,7 +58,7 @@ public final class Soldier extends Settler {
      * @param soldier the soldier wanted.
      * @return the position of the soldier.
      */
-    private Position getPosition(final Soldier soldier) {
+    public Position getPosition(final Soldier soldier) {
         return soldier.getPosition();
     }
 
