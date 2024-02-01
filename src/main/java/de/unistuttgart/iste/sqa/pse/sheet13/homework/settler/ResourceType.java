@@ -15,11 +15,17 @@ public class ResourceType {
      * @throws IllegalArgumentException if invalid  label is put as an argument.
      */
     ResourceType(final String label) {
-        super();
         if (label == null || label.contains(" ")) {
             throw new IllegalArgumentException("Label must not be empty!");
         }
+        this.label = label;
     }
+
+     /*@
+      @ requires ResourceType !== null;
+      @ requires label !== null;
+      @ ensures returns the label;
+     */
 
     /**
      * Gets the label of the ResourceType.

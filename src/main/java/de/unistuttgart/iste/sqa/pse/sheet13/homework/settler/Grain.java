@@ -7,7 +7,6 @@ public final class Grain extends Resource {
      *
      * @author Moritz Mairle, Quentin Hadar, Nora Jasharaj.
      */
-    private Grain grain;
 
     /**
      * Constructor for Grain.
@@ -19,13 +18,4 @@ public final class Grain extends Resource {
     Grain(String name, Position position) {
         super(name, position);
     }
-
-    public Grain getGrain(final Grain grain) {
-        if (grain == null) {
-            throw new IllegalStateException(" Grain must not be null!");
-        }
-        this.grain = grain;
-        return this.grain;
-    }
-
 }

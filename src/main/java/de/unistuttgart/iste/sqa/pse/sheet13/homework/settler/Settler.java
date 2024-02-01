@@ -17,6 +17,7 @@ public abstract class Settler {
     private List<Resource> consumedResources = new ArrayList<>();
     private List<Resource> producedResources = new ArrayList<>();
 
+
     public abstract void settle();
 
     /**
@@ -42,6 +43,7 @@ public abstract class Settler {
      * Gets the name of the Settler.
      *
      * @return the name of the Settler.
+     * @throws IllegalArgumentException if argument is null.
      */
     public String getName() {
         if (name == null || name.contains(" ")) {
@@ -50,9 +52,22 @@ public abstract class Settler {
         return name;
     }
 
+    /*@
+      @ requires Settler !== null;
+      @ requires position !== null;
+      @ ensures returns the name;
+     */
+
+    /**
+     * Gets the position of the Settler.
+     *
+     * @return the current position.
+     * @throws IllegalArgumentException if argument is null.
+     */
     public Position getPosition() {
+        if (position == null) {
+            throw new IllegalStateException("Position cannot be null");
+        }
         return position;
     }
-
-    ;
 }

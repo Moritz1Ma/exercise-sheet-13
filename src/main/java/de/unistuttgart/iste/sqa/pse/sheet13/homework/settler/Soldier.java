@@ -59,8 +59,12 @@ public final class Soldier extends Settler {
      *
      * @param soldier the soldier wanted.
      * @return the position of the soldier.
+     * @throws IllegalArgumentException if argument is null.
      */
     public Position getPosition(final Soldier soldier) {
+        if (soldier == null) {
+            throw new IllegalStateException("This soldier is invalid.");
+        }
         return soldier.getPosition();
     }
 
