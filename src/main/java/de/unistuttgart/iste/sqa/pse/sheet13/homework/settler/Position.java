@@ -25,7 +25,7 @@ public final class Position {
      /*@
       @ requires Position !== null;
       @ requires longitude !== null;
-      @ ensures returns the longitude,
+      @ ensures returns the longitude;
      */
 
     /**
@@ -41,7 +41,7 @@ public final class Position {
      /*@
       @ requires Position !== null;
       @ requires latitude !== null;
-      @ ensures returns the latitude,
+      @ ensures returns the latitude;
      */
 
     /**

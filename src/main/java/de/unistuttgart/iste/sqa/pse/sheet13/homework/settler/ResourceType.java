@@ -9,7 +9,7 @@ public class ResourceType {
     /**
      * Constructor for ResourceType.
      *
-     * @param label the label fo the ResourceType.
+     * @param label the label for the ResourceType.
      * @throws IllegalArgumentException if invalid  label is put as an argument.
      */
     ResourceType(final String label) {

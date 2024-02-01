@@ -33,7 +33,7 @@ public abstract class Resource {
     /**
      * Gets the position of the Resource.
      *
-     * @return position of hte resource.
+     * @return position of the resource.
      */
     public Position getPosition() {
         return position;
