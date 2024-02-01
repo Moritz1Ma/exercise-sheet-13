@@ -9,8 +9,8 @@ package de.unistuttgart.iste.sqa.pse.sheet13.homework.settler;
  */
 
 public abstract class Resource {
-    public String name;
-    public Position position;
+    public final String name;
+    public final Position position;
 
     /**
      * Constructor for Resource.
@@ -39,7 +39,7 @@ public abstract class Resource {
      *
      * @return name the name of the Resource.
      */
-    public String getName() {
+    public final String getName() {
         return name;
     }
 
@@ -54,7 +54,7 @@ public abstract class Resource {
      *
      * @return position of the resource.
      */
-    public Position getPosition() {
+    public final Position getPosition() {
         return position;
     }
 }

@@ -15,7 +15,7 @@ public final class Grain extends Resource {
      * @param position the position of the grain.
      */
 
-    Grain(String name, Position position) {
+    private Grain(String name, Position position) {
         super(name, position);
     }
 }

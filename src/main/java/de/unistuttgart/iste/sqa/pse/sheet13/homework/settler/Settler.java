@@ -45,7 +45,7 @@ public abstract class Settler {
      * @return the name of the Settler.
      * @throws IllegalArgumentException if argument is null.
      */
-    public String getName() {
+    public final String getName() {
         if (name == null || name.contains(" ")) {
             throw new IllegalStateException("The name cannot be null");
         }
@@ -64,7 +64,7 @@ public abstract class Settler {
      * @return the current position.
      * @throws IllegalArgumentException if argument is null.
      */
-    public Position getPosition() {
+    public final Position getPosition() {
         if (position == null) {
             throw new IllegalStateException("Position cannot be null");
         }
