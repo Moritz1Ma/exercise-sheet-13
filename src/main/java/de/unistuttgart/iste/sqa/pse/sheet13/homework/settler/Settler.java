@@ -1,13 +1,21 @@
 package de.unistuttgart.iste.sqa.pse.sheet13.homework.settler;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Abstract class for Settlers.
  * <p>
  * Settlers have a name, a position and the method to settle.
+ *
+ * @author Moritz Mairle, Quentin Hadar, Nora Jasharaj.
  */
+
 public abstract class Settler {
-    private String name;
-    private Position position;
+    public String name;
+    public Position position;
+    private List<Resource> consumedResources = new ArrayList<>();
+    private List<Resource> producedResources = new ArrayList<>();
 
     public abstract void settle();
 
@@ -42,7 +50,9 @@ public abstract class Settler {
         return name;
     }
 
-    public Position getPosition(){
+    public Position getPosition() {
         return position;
-    } ;
+    }
+
+    ;
 }

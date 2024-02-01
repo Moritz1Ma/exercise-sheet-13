@@ -4,6 +4,7 @@ package de.unistuttgart.iste.sqa.pse.sheet13.homework.settler;
  * Abstract class for Resource.
  * <p>
  * Resources are defined by their label.
+ * @author Moritz Mairle, Quentin Hadar, Nora Jasharaj.
  */
 
 
@@ -11,20 +12,27 @@ package de.unistuttgart.iste.sqa.pse.sheet13.homework.settler;
  *
  */
 public abstract class Resource {
-    private String name;
-    private String label;
-    private Position position;
+    public String name;
+    public Position position;
 
     /**
      * Constructor for Resource.
      *
-     * @param label the label of the Resource.
+     * @param name the name of the Resource.
+     * @param position the position of the Resource.
      */
-    protected Resource(final String label) {
-        this.label = label;
+    Resource(String name, Position position){
+        this.name = name;
+        this.position = position;
     }
 
-     /*@
+
+
+    public String getName(){
+        return name;
+    }
+
+    /*@
       @ requires Resource !== null;
       @ requires position !== null;
       @ ensures returns the position,

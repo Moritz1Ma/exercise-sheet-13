@@ -4,6 +4,8 @@ package de.unistuttgart.iste.sqa.pse.sheet13.homework.settler;
  * Position of a Settler or Resource.
  * <p>
  * The Position is defined by longitude and latitude.
+ *
+ * @author Moritz Mairle, Quentin Hadar, Nora Jasharaj.
  */
 public final class Position {
     private final long longitude;

@@ -2,15 +2,22 @@ package de.unistuttgart.iste.sqa.pse.sheet13.homework.settler;
 
 public final class Grain extends Resource {
 
+    /**
+     * Class for Grain which extends resource.
+     *
+     * @author Moritz Mairle, Quentin Hadar, Nora Jasharaj.
+     */
     private Grain grain;
 
     /**
      * Constructor for Grain.
      *
-     * @param label the label of the grain.
+     * @param name     the name of the grain.
+     * @param position the position of the grain.
      */
-    private Grain(final String label) {
-        super(label);
+
+    Grain(String name, Position position) {
+        super(name, position);
     }
 
     public Grain getGrain(final Grain grain) {

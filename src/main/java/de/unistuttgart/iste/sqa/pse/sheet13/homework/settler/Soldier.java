@@ -3,6 +3,8 @@ package de.unistuttgart.iste.sqa.pse.sheet13.homework.settler;
 /**
  * Class for  Soldiers who are a subclass of Settlers.
  * <p>
+ *
+ * @author Moritz Mairle, Quentin Hadar, Nora Jasharaj.
  */
 public final class Soldier extends Settler {
     private Settler enemy;
