@@ -15,7 +15,7 @@ public final class Soldier extends Settler {
      * @param name     the name of the Soldier;
      * @param position the position of the soldier;
      */
-    private Soldier(String name, Position position) {
+    private Soldier(final String name, final Position position) {
         super(name, position);
     }
 
@@ -30,7 +30,7 @@ public final class Soldier extends Settler {
      */
     @Override
     public void settle() {
-        //TODO /lasst das so, das Todo ist Teil der Aufgabenstellung
+        //TODO
     }
 
     /*@
@@ -45,27 +45,6 @@ public final class Soldier extends Settler {
      */
     public void fightEnemy(final Settler enemy) {
         this.enemy = enemy;
-        //TODO /lasst das so, das Todo ist Teil der Aufgabenstellung
+        //TODO
     }
-
-     /*@
-      @ requires soldier !== null;
-      @ requires  position !== null;
-      @ ensures returns the position;
-     */
-
-    /**
-     * Gets the position of the soldier.
-     *
-     * @param soldier the soldier wanted.
-     * @return the position of the soldier.
-     * @throws IllegalArgumentException if argument is null.
-     */
-    public final Position getPosition(final Soldier soldier) {
-        if (soldier == null) {
-            throw new IllegalStateException("This soldier is invalid.");
-        }
-        return soldier.getPosition();
-    }
-
 }

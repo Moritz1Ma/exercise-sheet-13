@@ -12,10 +12,10 @@ import java.util.List;
  */
 
 public abstract class Settler {
-    public String name;
-    public Position position;
-    private List<Resource> consumedResources = new ArrayList<>();
-    private List<Resource> producedResources = new ArrayList<>();
+    final public String name;
+    final public Position position;
+    final private List<Resource> consumedResources = new ArrayList<>();
+    final private List<Resource> producedResources = new ArrayList<>();
 
 
     public abstract void settle();
@@ -31,6 +31,8 @@ public abstract class Settler {
         if (name == null || name.contains("  ") || position == null || getPosition() == null) {
             throw new IllegalArgumentException("Name and position both have to be declared!");
         }
+        this.name = name;
+        this.position = position;
     }
 
     /*@

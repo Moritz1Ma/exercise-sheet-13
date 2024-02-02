@@ -14,8 +14,8 @@ public final class Position {
     /**
      * Constructor for Position.
      *
-     * @param longitude
-     * @param latitude
+     * @param longitude the longitude of the position.
+     * @param latitude the latitude of the position.
      */
     private Position(final long longitude, final long latitude) {
         super();
