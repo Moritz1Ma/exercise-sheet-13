@@ -5,7 +5,7 @@ package de.unistuttgart.iste.sqa.pse.sheet13.homework.settler;
  *
  * @author Moritz Mairle, Quentin Hadar, Nora Jasharaj.
  */
-public class ResourceType {
+public final class ResourceType {
     public String label;
 
     /**
